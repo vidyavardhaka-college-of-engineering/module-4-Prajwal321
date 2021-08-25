@@ -6,14 +6,16 @@
 int main() 
 { 
     struct book 
-    { 
-       //declare name and price
-        int pages; 
+    {  
+        char name[50]; 
+        int price; //declare name and price
+        int pages;
+       
     }; 
     struct book b1;
      
     printf("Enter names, prices & no. of pages of 3 books"); 
-    scanf("%s%d%d", &b1.name, &b1.price, &b1.pages);  
+    scanf("%s%d%d", b1.name, &b1.price, &b1.pages);  
     printf("%s %d %d", b1.name, b1.price, b1.pages); 
      return 0;
-} 
+}
